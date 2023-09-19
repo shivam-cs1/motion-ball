@@ -1,0 +1,37 @@
+.ball {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  .base {
+    height: 30px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    border-radius: 40px;
+    left: 650px;
+    transform: translateY(690px);
+    animation-timing-function:ease-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes move {
+      0%{
+          transform: translate();
+          background-color: blue;
+      }
+      50%{
+          transform: translate(690px,540px);
+          background-color: chartreuse;
+      }
+      100%{
+          transform: translate(1300px,0px);
+          background-color: deeppink;
+      }
+  }
